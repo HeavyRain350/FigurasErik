@@ -1,8 +1,10 @@
+--- 
 before_script: 
-  - "sudo autopep8 -ir *"
-  - "sudo flake8 --max-complexity=15 --exclude=*.txt,*.md *"
+  - "autopep8 -ir *"
+  - "flake8 --max-complexity=15 --exclude=*.txt,*.md *"
 install: "pip install -r requirements.txt"
 language: python
-python: - "2.7"
+python: 
+  - "2.7"
 script: 
-  - "sudo python figurasunittest.py"
+  - "python figurasunittest.py"
